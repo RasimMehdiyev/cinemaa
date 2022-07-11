@@ -1,4 +1,5 @@
 import Main from "./pages/Main.js";
+import Movies from "./pages/Movies.js";
 
 document.addEventListener("click", (e) => {
   const { target } = e;
@@ -13,6 +14,7 @@ document.addEventListener("click", (e) => {
 const root = document.querySelector("#root");
 const routes = {
   "/": Main,
+  "/movies": Movies,
 };
 
 function getView(view) {

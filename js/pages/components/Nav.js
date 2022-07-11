@@ -3,8 +3,8 @@ class Nav {
     return `
         <nav>
             <ul class="row main-nav">
-                <li><a href="">TV Shows</a></li>
-                <li><a href="">Mosddsvies</a></li>
+                <li><a href="/">TV Shows</a></li>
+                <li><a href="/movies">Movies</a></li>
                 <li><a href="">Upcoming Movies</a></li>
                 <li><a href="">Trailers</a></li>
                 <li><a href="">My List</a></li>

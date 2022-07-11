@@ -1,13 +1,18 @@
 import { img_path } from "../api.js";
 class PopularMovies {
   constructor() {
-    this.container = document.querySelector("#popularMoviesContainer");
-    this.container.innerHTML = "";
+    this.container;
   }
+
+  callFunctions() {
+    this.container = document.querySelector("#popularMoviesContainer");
+  }
+
   render(array) {
     array.forEach((data) => {
       const { poster_path, title, genre_ids } = data;
-      this.container.innerHTML += `
+      this.container.innerHTML += "";
+      return (this.container.innerHTML += `
       <div class="slider_main_card">
         <div class="slider_inner_card">                           
             <img src="${img_path}${poster_path}" alt="">
@@ -19,7 +24,7 @@ class PopularMovies {
             </div>
         </div>
         <h3 class="slider_card_title">${title}</h3>
-    </div>`;
+    </div>`);
     });
   }
 }
